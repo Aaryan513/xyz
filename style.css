@@ -7,3 +7,35 @@ p{
 .one{
     color: blue;
 }
+#two{
+    background-color: brown;
+}
+h2,h3{
+    color: crimson;
+}
+a[target="blank"]{
+    color: darkcyan;
+}
+a[target="blank"]{
+    color: darkorange;
+}
+h1{
+    font-size:xx-large;
+    background-color: blue;
+}
+h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+h3{
+    font-style:initial;
+    background-color: chartreuse;
+}
+h4{
+    font-weight:900;
+    font-style: oblique;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+h6{
+    font-size: xx-large;
+}
