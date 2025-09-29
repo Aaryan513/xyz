@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card{
+            height: 200px;
+            width: 200px;
+            border: 7px dashed blueviolet;
+            border-radius: 40px;
+            background: palevioletred;
+            transition: background 0.5s ease,transform 0.5s ease;
+        }
+        .card:hover{
+            background: firebrick;
+            transform: rotate(8000deg);
+        }
+        button{
+            background-color: peru;
+            color: black;
+            border-radius: 20px;
+            border: 2px solid brown;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: blue;
+            color: rebeccapurple;
+            transform: scale(1,1);
+        }
+    </style>
+</head>
+<body>
+    <div class="card"></div>
+    <br><br>
+    <button type="button">click me</button>
+</body>
+</html>

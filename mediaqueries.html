@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container{
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+        }
+        .box{
+            flex: 1;
+            padding: 20px;
+            background: lightblue;
+            text-align: center;
+        }
+        /*tablet*/
+        @media (max-width:768px) {
+            .container {
+                flex-direction: column;
+            }
+            .box{
+                background-color: lightblue;
+            }
+            
+        }
+        /*mobile*/
+        @media (max-width:480px) {
+            .box{
+                font-size: 14px;
+                background: lightcoral;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box">box1</div>
+    <div class="box">box2</div>
+    <div class="box">box3</div>
+</div>
+</body>
+</html>
