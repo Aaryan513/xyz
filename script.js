@@ -1,10 +1,38 @@
-const a=5;
-const b=6;
-sum=a+b;
-sub=a-b;
-div=a/b;
-mod=a%b;
-console.log(sum)
-console.log(sub)
-console.log(div)
-console.log(mod)
+let car="Porshe",
+gear="mannual",
+year=2025,
+type="null"
+console.log(typeof(type))
+console.log(typeof(car))
+console.log(typeof(year))
+console.log(typeof(gear))
+
+let a="harry"
+let b="10"
+console.log(typeof(a+b))
+
+let fruits=["mango","apple","jackfruit","pineapple"];
+console.log(fruits)
+console.log("total fruits:",fruits.length)
+console.log(fruits[0])
+fruits.push("graps");
+console.log("the new array is:",fruits)
+
+let student={
+    name:"Aaryan",
+    age:20,
+    course:"HTML and javascript",
+    isEnrolled:true
+    
+}
+console.log(student)
+console.log(student.name)
+
+let x=2;
+console.log("Addition: x+3=",x+3)
+console.log("Subtraction: x-3=",x-3)
+console.log("exponential: x**3=",x**3)
+console.log("increment: x++=",x++)
+console.log("decrement: x--=",x--)
+console.log("division: x/3=",x/3)
+console.log("module; x%3=",x%3)
