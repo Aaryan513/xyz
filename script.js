@@ -36,3 +36,13 @@ console.log("increment: x++=",x++)
 console.log("decrement: x--=",x--)
 console.log("division: x/3=",x/3)
 console.log("module; x%3=",x%3)
+
+
+let x=2;
+console.log(" x==3=",x==3)
+console.log(" x===3=",x===3)
+console.log(" x!=3=",x!=3)
+console.log(" x!==3=",x!==3)
+console.log(" x>3=",x>3)
+console.log(" x<3=",x<3)
+console.log(" x>=3",x>=3)
