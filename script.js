@@ -46,3 +46,27 @@ console.log(" x!==3=",x!==3)
 console.log(" x>3=",x>3)
 console.log(" x<3=",x<3)
 console.log(" x>=3",x>=3)
+
+
+let sum=0;
+const n=10;
+for(let i=1;i<=n;i++){
+    sum += i;
+}
+console.log("sum:",sum);
+
+
+
+let num=2;
+while(num<=20){
+    console.log(num)
+    num=num+2;
+}
+
+
+let i=prompt("enter the number:");
+do{
+    console.log(i);
+    i--;
+}
+while(i>0)
