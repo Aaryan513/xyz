@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="style1.css">
+    <h1>Event Handling Demo</h1>
+</head>
+<body>
+    <button id="clickbtn">click me</button>
+    <p id="clickresult"></p>
+    <input type="text" id="keyinput" placeholder="type somwthing...">
+    <p id="keyinput"></p>
+    <input type="text" id="liveinput" placeholder="start typing">
+    <p id="liveinput"></p>
+    <form id="my form">
+        <br><br>
+        <input type="text" placeholder="enter your name">
+        <br><br>
+        <button type="submit">submit</button>
+    </form>
+    <script>
+        document.getElementById("clickbtn").addEventListener("click",function(){
+            document.getElementById("clickresult").textcontent="button got clicked!";
+        });
+        document.getElementById("keyinput").addEventListener("keypress",function(event){
+            document.getElementById("keyinput").textcontent="start typing :" + event.key;
+        });
+        document.getElementById("liveresult").addEventListener("input",function(event){
+            document.getElementById("liveresult").textcontent="you typed :",event.target.value;
+        });   
+        document.getElementById("myform").addEventListener("submit",function(event){
+            event.preventDefault();
+            document.getElementById("formresult").textcontent="form submitted";
+        });              
+    </script>
+</body>
+</html>

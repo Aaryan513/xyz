@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="clickbtn">click me</button>
+    <p id="clickresult"></p>
+    <input type="text" id="keyinput" placeholder="type somwthing...">
+    <p id="clickresult"></p>
+    <form id="myform">
+        <input type="text" placeholder="enter name"><br><br>
+        <button type="submit">submit</button>
+    </form>
+    <p id="formresult"></p>
+    <script>
+        document.getElementByid("clickbtn").addEventListener("click",function(){
+            document,getElementByid("clickresult").textcontent("button got clicked")
+        });
+        document.getElementByid("keyinput").addEventListener("click",function(event){
+            document,getElementByid("keyresult").textcontent="ypu pressed: "event.key;
+        });
+        document.getElementByid("liveinput").addEventListener("input",function(event){
+            document,getElementByid("liveresult").textcontent="you typed "  
+    </script>
+
+</body>
+</html>
