@@ -3,51 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Cake shop</title>
     <link rel="stylesheet" href="project.css">
 </head>
 <body>
     <header>
-        <h1>Aaryan Polle</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">about</a></li>
-                <li><a href="#skills">skills</a></li>
-                <li><a href="#project">project</a></li>
-                <li><a href="#contact">contact</a></li>
-            </ul>
-        </nav>
+        <h1>Sweet Dilights</h1>
+        <p>Fresh and tasty cakes</p>
     </header>
-    <section id="about">
-        <h2>Hi,i'm Aaryan,an aspiring Web developer.I enjoy building simple
-            and creative projects that solve real problems and help me to
-            learn something new along the way.
-        </h2>
+    <nav>
+        <a href="home">home</a>
+        <a href="menu">menu</a>
+        <a href="contact">contact</a>
+    </nav>
+    <section id="home">
+        <h2>Welcome to sweet delights</h2>
+        <p>We bake happiness in the form of cakes</p>
     </section>
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Html</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-        </ul>
-    </section>
-    <section id="project">
-        <h2>project</h2>
-        <div class="project-card">
-            <h3>Personal portfolio website</h3>
-            <p>A responsive website to showcase my profile,projects and contact deatails.
-                Built using Html ,Css and javascript.
-            </p>
+    <section id="menu">
+        <h2>our cakes</h2>
+        <div class="Cake">
+            <h3>chocolate cake</h3>
+            <p>Rs.500</p>
+            <button onclick="orderwhatsApp('chocolate cake')">order</button>
+        </div>
+        <div class="cake">
+            <h3>Red velvet cake</h3>
+            <p>Rs.650</p>
+            <button onclick="orderwhatsApp('red velvet cake')">order</button>
         </div>
     </section>
     <section id="contact">
-        <h2>Contact me</h2>
-        <form action="https://formsubmit.co/aaryanpolle@gmail.com" method="POST">
-            <input type="text" placeholder="your name required">
-            <input type="email" placeholder="your email required">
-            <input type="number" placeholder="your number required">
-            <button type="submit">send</button>
+        <h2>contact us</h2>
+        <p> +91 9529440310</p>
+        <p> +91 8879236147</p>
+        <p> info@sweetdelight.com</p>
+        <h3>order form</h3>
+        <form id="orderform">
+            <input type="text" id="name" placeholder="your name required">
+            <br><br>
+            <input type="tel" id="phone" placeholder="your phone number required">
+            <br><br>
+            <select id="cake" required>
+                <option value="">select cake</option>
+                <option value="chocolate cake">chocolate cake</option>
+                <option value="red velvet cake">red velvet cake</option>
+            </select>
+            <br><br>
+            <button type="submit">submit order</button>
         </form>
     </section>
     <script src="project.js"></script>
