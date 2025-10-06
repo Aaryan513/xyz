@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spread operator array</title>
+</head>
+<body>
+    <h1>spread operator with array</h1>
+    <p id="output"></p>
+    <script>
+        const fruits=["apple","bannana","pineapple"];
+        const morefruits=["orange",...fruits,"mango"];
+
+        Document.getElementById("output1").textcontent=morefruits.join(",");
+    </script>
+</body>
+</html>

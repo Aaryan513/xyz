@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <h1>Sweet Dilights</h1>
+        <h1>Cake Bros</h1>
         <p>Fresh and tasty cakes</p>
     </header>
     <nav>
@@ -43,10 +43,18 @@
         <p> +91 8879236147</p>
         <p> info@sweetdelight.com</p>
         <h3>order form</h3>
-        <form id="https://formsubmit.co/aaryanpolle@gmail.com" method="post">
-            <input type="text" id="name" placeholder="your name required">
+        <form action="https://formsubmit.co/aaryanpolle@gmail.com" method="POST">
+            <label for="name" id="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="your name required">
             <br><br>
-            <input type="tel" id="phone" placeholder="your phone number required">
+            <label for="tel" id="phone">Phone:</label>
+            <input type="tel" id="phone" name="name" placeholder="your phone number required">
+            <br><br>
+            <select id="payment"required>
+                <option value="">select payment mathod</option>
+                <option value="cash">cash</option>
+                <option value="gpay">gpay</option>
+            </select>
             <br><br>
             <select id="cake" required>
                 <option value="">select cake</option>
