@@ -22,15 +22,20 @@
     </section>
     <section id="menu">
         <h2>our cakes</h2>
-        <div class="Cake">
-            <h3>chocolate cake</h3>
-            <p>Rs.500</p>
-            <button onclick="orderwhatsApp('chocolate cake')">order</button>
-        </div>
-        <div class="cake">
+        <div class="cake-box">
             <h3>Red velvet cake</h3>
-            <p>Rs.650</p>
-            <button onclick="orderwhatsApp('red velvet cake')">order</button>
+            <p>Rs.650 /1kg</p>
+            <button onclick="ordercake('red velvet cake')">order</button>
+        </div>
+        <div class="cake-box">
+            <h3>Cheese cake</h3>
+            <p>Rs.900 /1kg</p>
+            <button onclick="ordercake('cheese cake')">order</button>
+        </div>
+        <div class="cake-box">
+            <h3>chocolate cake</h3>
+            <p>Rs.500 /1kg</p>
+            <button onclick="ordercake('chocolate cake')">order</button>
         </div>
     </section>
     <section id="contact">
@@ -39,7 +44,7 @@
         <p> +91 8879236147</p>
         <p> info@sweetdelight.com</p>
         <h3>order form</h3>
-        <form id="orderform">
+        <form id="https://formsubmit.co/aaryanpolle@gmail.com" method="post">
             <input type="text" id="name" placeholder="your name required">
             <br><br>
             <input type="tel" id="phone" placeholder="your phone number required">
@@ -47,7 +52,8 @@
             <select id="cake" required>
                 <option value="">select cake</option>
                 <option value="chocolate cake">chocolate cake</option>
-                <option value="red velvet cake">red velvet cake</option>
+                <option value="red velvet cake">Red velvet cake</option>
+                <option value="Cheese cake">cheese cake</option>
             </select>
             <br><br>
             <button type="submit">submit order</button>

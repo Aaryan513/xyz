@@ -1,17 +1,17 @@
 body{
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #fff8f2;
+  background: lightblue;
   text-align: center;
 }
 header {
-  background: #ff6f91;
+  background:#ff6f91;
   color: white;
   padding: 20px;
 }
 nav {
-  background: #ffb6c1;
-  padding: 10px;
+  background:yellow;
+  padding: 20px;
 }
 nav a {
   margin: 0 15px;
@@ -22,7 +22,7 @@ nav a {
 section {
   padding: 30px;
 }
-.cake {
+.cake-box{
   margin: 20px auto;
   padding: 15px;
   background: white;
