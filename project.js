@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 document.getElementById("orderForm").addEventListener("submit", function(e) {
   e.preventDefault(); 
   let name = document.getElementById("name").value;
@@ -10,3 +11,5 @@ document.getElementById("orderForm").addEventListener("submit", function(e) {
     alert("Please fill all fields!");
   }
 });
+=======
+>>>>>>> 1ed2f215b609c387ad762be321a9eea342f607ca
