@@ -14,15 +14,16 @@ nav {
   padding: 20px;
 }
 nav a {
-  margin: 0 15px;
+  margin:0 15px;
   text-decoration: none;
   font-weight: bold;
-  color: #333;
+  color:#333;
 }
 section {
   padding: 30px;
 }
 .cake-box{
+  font-size: 20px;
   margin: 20px auto;
   padding: 15px;
   background: white;
@@ -41,9 +42,26 @@ button {
 button:hover {
   background: #e05575;
 }
-input, select {
-  padding: 8px;
-  width: 200px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
+h4{
+  color:#333;
+  font-size: 30px;
 }
+h5{
+  color: #333;
+  font-size: 30px;
+}
+h2{
+  color: #333;
+  font-size: 30px;
+}
+.container{
+  text-align:center;
+  width: 350px;
+  margin: 40px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+

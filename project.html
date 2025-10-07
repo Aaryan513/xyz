@@ -24,46 +24,51 @@
         <h2>our cakes</h2>
         <div class="cake-box">
             <h3>Red velvet cake</h3>
-            <p>Rs.650 /1kg</p>
-            <button onclick="ordercake('red velvet cake')">order</button>
+            <p>Rs.700 /1kg</p>
         </div>
         <div class="cake-box">
             <h3>Cheese cake</h3>
             <p>Rs.900 /1kg</p>
-            <button onclick="ordercake('cheese cake')">order</button>
         </div>
         <div class="cake-box">
             <h3>chocolate cake</h3>
             <p>Rs.500 /1kg</p>
-            <button onclick="ordercake('chocolate cake')">order</button>
     </section>
     <section id="contact">
-        <h2>contact us</h2>
+        <h5>contact us</h5>
         <p> +91 9529440310</p>
         <p> +91 8879236147</p>
         <p> info@sweetdelight.com</p>
-        <h3>order form</h3>
+        <h4>Order form</h4>
         <form action="https://formsubmit.co/aaryanpolle@gmail.com" method="POST">
+            <div class="container">
             <label for="name" id="name">Name:</label>
             <input type="text" id="name" name="name" placeholder="your name required">
             <br><br>
             <label for="tel" id="phone">Phone:</label>
-            <input type="tel" id="phone" name="name" placeholder="your phone number required">
+            <input type="tel" id="phone" name="Phone" placeholder="your phone number required">
             <br><br>
-            <select id="payment"required>
-                <option value="">select payment mathod</option>
-                <option value="cash">cash</option>
-                <option value="gpay">gpay</option>
-            </select>
+            <label for="address" id="address">Address:</label>
+            <input type="text" id="address" name="address" placeholder="your address required">
             <br><br>
-            <select id="cake" required>
-                <option value="">select cake</option>
-                <option value="chocolate cake">chocolate cake</option>
-                <option value="red velvet cake">Red velvet cake</option>
-                <option value="Cheese cake">cheese cake</option>
-            </select>
+            <label for="Quantity" id="Quantity">Quantity(in kg/gram):</label>
+            <input type="text" id="Quantity" name="Quantity" placeholder="quantity">
+            <br><br>
+            <label for="payment">payment:</label>
+            <input type="radio" name="payment" value="cash">cash
+            <input type="radio" name="payment" value="Gpay">Gpay
+            <br><br>
+            <label for="cake">Select cake:</label>
+            <input type="radio" name="cake selected" value="red velvet cake">Red velvet cake
+            <br>
+            <input type="radio" name="cake selected" value="cheese cake">cheese cake
+            <br>
+            <input type="radio" name="cake selected" value="chocolate cake">chocolate cake
             <br><br>
             <button type="submit">submit order</button>
+            <br><br>
+            <button type="reset">Reset</button>
+            </div>
         </form>
     </section>
     <script src="project.js"></script>
