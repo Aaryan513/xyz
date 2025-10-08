@@ -1,23 +1,29 @@
 body{
   margin: 0;
   font-family: Arial, sans-serif;
-  background: lightblue;
+  background: #fff8e7;
   text-align: center;
 }
 header {
-  background:#ff6f91;
+  background:#5d3a00;
   color: white;
   padding: 20px;
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 30px;
 }
 nav {
-  background:yellow;
+  background:#d4a373;
   padding: 20px;
 }
 nav a {
   margin:0 15px;
   text-decoration: none;
   font-weight: bold;
-  color:#333;
+  color:black;
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 25px;
 }
 section {
   padding: 30px;
@@ -30,38 +36,61 @@ section {
   width: 250px;
   border-radius: 10px;
   box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+  background-color:yellowgreen;
 }
 button {
   padding: 8px 15px;
-  background: #ff6f91;
+  background: #c0392b;
   border: none;
   color: white;
   border-radius: 5px;
   cursor: pointer;
 }
-button:hover {
+button:hover{
   background: #e05575;
 }
 h4{
-  color:#333;
+  color:black;
   font-size: 30px;
 }
 h5{
-  color: #333;
+  color: black;
   font-size: 30px;
 }
 h2{
-  color: #333;
+  color: black;
   font-size: 30px;
 }
 .container{
   text-align:center;
   width: 350px;
   margin: 40px auto;
-  background-color: white;
+  background-color:lightcyan;
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.box{
+  text-align:center;
+  width: 350px;
+  margin: 40px auto;
+  background-color:lightcyan;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.box2{
+  font-style:oblique;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.cont{
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: black;
 }
 
 
