@@ -2,78 +2,62 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>document</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beardup.com</title>
+    <link rel="stylesheet" href="DM.css">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P1J7CE81QN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-P1J7CE81QN');
+</script>
 </head>
 <body>
-    <div class="abc">
-    <h1> heading 1</h1>
-    <p> The story of "Ali Baba and the Forty Thieves" is a folktale from the Middle
-         East about a poor woodcutter who<br> discovers a cave filled with treasure by 
-        observing 40 thieves<br> using the magic words "Open Sesame". 
-    </p>
-    <img src="free-nature-images.jpg" alt="nature" height="200px" width="200px">
-    <hr>
-    <ul>
-        <li> mango</li>
-        <li> apple</li>
-        <li> grapes</li>
-    </ul>
-    <ol type="a">
-        <li> mango</li>
-        <li> apple</li>
-        <li> grapes</li>
-    </ol>
-    <dl>
-        <dl>HTML</dl>
-        <dl>HTML is vey fun</dl>
-    </dl>
-    <a href="https://en.wikipedia.org/wiki/Ali_Baba_and_the_Forty_Thieves" target="_blank"> baba.com</a><br>
-    <a href="mailto:aaryanpolle@gmail.com">send mail</a><br>
-    <a href="tel:+919529440310">contact</a><br>
+    <header>BEARDUP</header>
     <nav>
-        <a href="def.html">menu</a>
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
     </nav>
-    <p> this is <span style="color:red;"> important message </span> to all student</p>
-    <audio controls src="This 2 Minute Challenge can make you a Topper.mp3" type="audio/mp3"> 2 minutes</audio>
-    <div style="background-color:blue;">
-        <h1> heading tag</h1>
-        <p> Nature encompasses the physical world, from landscapes and weather to plants and animals,<br> providing essentials for survival like food, water, and air while offering profound beauty and a sense of</p>
-    </div>
-    <form action="">
-        <label for="roll no">roll no</label>
-        <input type="text" roll no="roll no" id="roll no" placeholder="enter your roll no">
-        <hr>
+    <section>
+        <h2>Welcome to beardup</h2>
+        <p>"Premium grooming products for modern men"</p>
+    </section>
+    <br><br>
+    <section>
+        <h2>Our Products</h2>
+        <p>Beard oil</p>
+        <p>face wash</p>
+        <P>Grooming kit</P>
+    </section>
+    <form>
+        <h2>ORDER FORM</h2>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name">
         <br><br>
-        <label for="mail">email</label>
-        <input type="mail" name="mail" id="mail" placeholder="enter your email">
-        <hr>
+        <label for="code">Pincode:</label>
+        <input type="tel" id="code" name="code" placeholder="Enter your pincode">
         <br><br>
-        <label for="password">password</label>
-        <input type="password" name="password" id="password" placeholder="enter your password">
-        <hr>
+        <label for="gmail">Gmail:</label>
+        <input type="mail" id="gmail" name="gmail" placeholder="Enter your gmail">
         <br><br>
-        <input type="checkbox">i agree
+        <label for="phone">Phone Number:</label> 
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
         <br><br>
-        <input type="radio" name="male" value="male">male
-        <input type="radio" name="female" value="female">female
-        <hr>
-        <br><br>
-        <label for="feedback">Your feedback</label>
-        <textarea name="feedback" id="feedback" cols="40" rows="20" placeholder="enter your feedback"></textarea>
-        <hr>
-        <br><br>
-        <label for="pet">pet</label>
-        <select name="pet" id="pet">
-            <option value="girraf">girraf</option>
-            <option value="dog">dog</option>
+        <label>Select Products:</label><br>
+        <select multiple>
+            <option>Beard oil</option>
+            <option>face wash</option>
+            <option>grooming kit</option>
         </select>
-        <button type="submit">submit</button>
         <br><br>
-        <button type="reset">reset</button>
+        <button type="reset">Reset</button>
         <br><br>
+        <button type="submit">Place order</button>
     </form>
-    </div>
 </body>
 </html>
