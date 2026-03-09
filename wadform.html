@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.caculocollege.com</title>
+    <link rel="stylesheet" href="wadform.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="form-container mt-5">
+    <h1>COURSE REGISTRATION FORM</h1>
+    <form onsubmit="saveData(event)">
+        <div class="card p-4 shadow-lg">
+        <h2>Student Information</h2>
+        <label for="first">First Name:</label>
+        <input type="text" id="first" name="first" class="form-control" placeholder="Your name required">
+        <br><br>
+        <label for="middle">Middle Name:</label>
+        <input type="text" id="middle" name="middle" class="form-control" placeholder="Your name required">
+        <br><br>
+        <label for="last">Last Name:</label>
+        <input type="text" id="last" name="last" class="form-control" placeholder="Your name required">
+        <br><br>
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone" class="form-control" placeholder="Your phone number required">
+        <br><br>
+        <label for="aphone">Adhar Card Number</label>
+        <input type="text" id="aphone" name="aphone" class="form-control" placeholder="Your adhar number required">
+        <br><br>
+        <label for="mail">Gmail:</label>
+        <input type="text" id="mail" name="mail" class="form-control" placeholder="Your email required">
+        <br><br>
+        <label class="form-label">Gender:</label>
+
+          <div class="d-flex gap-3">
+          <div class="form-check">
+          <input class="form-check-input" type="radio" name="gender" value="Male" id="male">
+          <label class="form-check-label" for="male">Male</label>
+          </div>
+
+          <div class="form-check">
+          <input class="form-check-input" type="radio" name="gender" value="Female" id="female">
+          <label class="form-check-label" for="female">Female</label>
+          </div>
+
+          <div class="form-check">
+          <input class="form-check-input" type="radio" name="gender" value="Other" id="other">
+          <label class="form-check-label" for="other">Other</label>
+          </div>
+         </div>
+        <br><br>
+        <label class="form-label">Select Course:</label>
+
+        <div class="d-flex gap-4 mb-3">
+        <div class="form-check">
+        <input class="form-check-input" type="radio" name="course" value="BCA" id="bca">
+        <label class="form-check-label" for="bca">BCA</label>
+        </div>
+
+        <div class="form-check">
+        <input class="form-check-input" type="radio" name="course" value="BBA" id="bba">
+        <label class="form-check-label" for="bba">BBA</label>
+        </div>
+
+        <div class="form-check">
+        <input class="form-check-input" type="radio" name="course" value="Bcom" id="bcom">
+        <label class="form-check-label" for="bcom">BCom</label>
+        </div>
+        </div>
+        </div>
+        <button type="reset" class="btn btn-secondary mt-3">Reset</button>
+        <br><br>
+        <button type="submit" class="btn btn-primary mt-3">Submit</button>
+        </div>
+        <script>
+        function saveData(event) {
+        event.preventDefault();
+        var first = document.getElementById("first").value;
+        var middle = document.getElementById("middle").value;
+        var last = document.getElementById("last").value;
+        var phone = document.getElementById("phone").value;
+        var adhar = document.getElementById("aphone").value;
+        var email = document.getElementById("mail").value;
+        var gender = document.querySelector('input[name="gender"]:checked')?.value;
+        var course = document.querySelector('input[name="course"]:checked')?.value;
+
+        localStorage.setItem("first", first);
+        localStorage.setItem("middle", middle);
+        localStorage.setItem("last", last);
+        localStorage.setItem("phone", phone);
+        localStorage.setItem("aphone", adhar);
+        localStorage.setItem("mail", email);
+        localStorage.setItem("gender", gender);
+        localStorage.setItem("course", course);
+
+        window.location.href = "wadformpage2.html";
+}
+</script>
+    </form>
+</body>
+</html>

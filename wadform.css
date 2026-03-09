@@ -1,0 +1,26 @@
+h1{
+    text-align: center;
+}
+.form-container{
+    text-align: center;
+    width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0  0 15px rgba(0,0,0,0.1);
+    background-color:white;
+}
+body{
+    background: linear-gradient(to right,#1e3c72,#2a5298);
+}
+.box{
+    border-radius: 12px;
+    background-color: white;
+}
+h1,h2{
+    color: #1e3c72;
+}
+button{
+    background-color: #2a5298;
+    color: white;
+}

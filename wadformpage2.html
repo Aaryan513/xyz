@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submitted deatails</title>
+    <link rel="stylesheet" href="wadformpage2.css">
+</head>
+<body>
+    <div class="box1">
+    <h2>Submitted Information</h2>
+    <p>First Name : <span id="showfirst" class="fw-bold"></span></p>
+    <p>Middle Name : <span id="showmiddle" class="fw-bold"></span></p>
+    <p>Last Name: <span id="showlast" class="fw-bold"></span></p>
+    <p>Phone Number: <span id="showphone" class="fw-bold"></span></p>
+    <p>Adhar Number: <span id="showaphone" class="fw-bold"></span></p>
+    <p>Email: <span id="showmail" class="fw-bold"></span></p>
+    <p>Gender: <span id="showgender" class="fw-bold"></span></p>
+    <p>Course: <span id="showcourse" class="fw-bold"></span></p>
+
+    <script>
+    window.onload=function() {  
+    document.getElementById("showfirst").innerText = localStorage.getItem("first") || "";
+    document.getElementById("showmiddle").innerText = localStorage.getItem("middle") || "";
+    document.getElementById("showlast").innerText = localStorage.getItem("last") || "";
+    document.getElementById("showphone").innerText = localStorage.getItem("phone") || "";
+    document.getElementById("showaphone").innerText = localStorage.getItem("aphone") || "";
+    document.getElementById("showmail").innerText = localStorage.getItem("mail") || "";
+    document.getElementById("showgender").innerText = localStorage.getItem("gender") || "";
+    document.getElementById("showcourse").innerText = localStorage.getItem("course") || "";
+    }
+    </script>
+    </div>
+
+</body>
+</html>
